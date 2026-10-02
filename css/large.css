@@ -1,0 +1,52 @@
+/* ========================================
+   BookNest Large Screen Styles
+======================================== */
+
+@media screen and (min-width: 700px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    main {
+        padding: 3rem 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        align-items: end;
+        display: grid;
+        gap: 0.75rem;
+        grid-template-columns: 1fr auto;
+    }
+
+    form label {
+        grid-column: 1 / -1;
+    }
+
+    input[type="search"] {
+        margin-bottom: 0;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #book-details {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .book-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,235 @@
+/* ========================================
+   BookNest Base Styles
+   Mobile-first design
+======================================== */
+
+/* Google Fonts */
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8F5F0;
+    color: #222222;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: #2F4858;
+    font-family: 'Merriweather', Georgia, serif;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #2F4858;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Header */
+header {
+    align-items: center;
+    background-color: #2F4858;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.logo {
+    color: #F8F5F0;
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+nav a {
+    color: #F8F5F0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #F4A261;
+}
+
+/* Main content */
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+}
+
+.hero p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+}
+
+/* Forms */
+form {
+    margin: 1.5rem auto;
+    max-width: 700px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input[type="search"] {
+    border: 2px solid #52796F;
+    border-radius: 6px;
+    font: inherit;
+    margin-bottom: 0.75rem;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+input[type="search"]:focus {
+    outline: 3px solid #F4A261;
+    outline-offset: 2px;
+}
+
+/* Buttons */
+button {
+    background-color: #52796F;
+    border: 2px solid #52796F;
+    border-radius: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    padding: 0.8rem 1.2rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover,
+button:focus {
+    background-color: #2F4858;
+    border-color: #2F4858;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Book grid */
+.book-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+/* Book cards */
+.book-card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+    box-shadow: 0 5px 15px rgb(0 0 0 / 18%);
+    transform: translateY(-4px);
+}
+
+.book-card img {
+    height: 250px;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+    width: 170px;
+}
+
+.book-card h2,
+.book-card h3 {
+    font-size: 1.2rem;
+}
+
+.book-card .book-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+/* Book details */
+#book-details {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+/* Messages */
+#search-message,
+#reading-list-message {
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #2F4858;
+    color: #F8F5F0;
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Accessibility */
+:focus-visible {
+    outline: 3px solid #F4A261;
+    outline-offset: 3px;
+}

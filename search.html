@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet"
+>
+  <meta name="description" content="Search for books using BookNest.">
+  <meta name="author" content="Irene">
+  <title>Search Books | BookNest</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/large.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">BookNest</a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="reading-list.html">Reading List</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Search for Books</h1>
+
+      <form id="search-form">
+        <label for="search-input">Book title, author, or keyword</label>
+        <input
+          type="search"
+          id="search-input"
+          name="search"
+          placeholder="Enter your search"
+          required
+        >
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Search Results</h2>
+
+      <p id="search-message"></p>
+
+      <div id="book-results" class="book-grid">
+        <!-- Book cards will be created with JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> BookNest</p>
+  </footer>
+</body>
+</html>
