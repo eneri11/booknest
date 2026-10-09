@@ -3,7 +3,6 @@ const GUTENDEX_URL = 'https://gutendex.com/books/';
 
 export async function searchOpenLibrary(query) {
     const url = `${OPEN_LIBRARY_URL}?q=${encodeURIComponent(query)}`;
-
     const response = await fetch(url);
 
     if (!response.ok) {

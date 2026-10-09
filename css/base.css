@@ -233,3 +233,74 @@ footer p {
     outline: 3px solid #F4A261;
     outline-offset: 3px;
 }
+
+
+/* Reading List Controls */
+#reading-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.book-card {
+    padding: 1.25rem;
+    border: 1px solid #d8dedb;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 8px rgb(34 34 34 / 8%);
+}
+
+.book-card h2,
+.book-card h3 {
+    margin-bottom: 0.75rem;
+    color: #2f4858;
+    line-height: 1.4;
+}
+
+.book-card p {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.book-card label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+.book-card select {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.7rem;
+    border: 1px solid #52796f;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #222222;
+    font: inherit;
+}
+
+.book-card button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #2f4858;
+    color: #ffffff;
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.book-card button:hover {
+    background-color: #52796f;
+}
+
+.book-card button:focus-visible,
+.book-card select:focus-visible {
+    outline: 3px solid #f4a261;
+    outline-offset: 3px;
+}
