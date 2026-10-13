@@ -16,6 +16,8 @@ export function displayBooks(books, container) {
         image.src = getCoverUrl(book.coverId);
         image.alt = `Cover of ${book.title}`;
         image.loading = 'lazy';
+        image.width = 170;
+        image.height = 250;
 
         const title = createElement('h2');
         title.textContent = book.title;
