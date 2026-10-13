@@ -1,27 +1,34 @@
+
 import {
     getReadingList,
     removeBook,
-    updateBookStatus
+    updateBookStatus,
+    addBook
 } from './storage.js';
 
-import { displayReadingList } from './ui.js';
+import {
+    displayReadingList,
+    displayBooks,
+    displayEbooks,
+    displayMessage
+} from './ui.js';
 
-import { getCurrentYear, getQueryParameter } from './utils.js';
+import {
+    getCurrentYear,
+    getQueryParameter
+} from './utils.js';
+
 import {
     searchOpenLibrary,
     getOpenLibraryBook,
     getGutendexBooks
 } from './api.js';
+
 import {
     formatOpenLibraryBook,
     formatGutendexBook
 } from './books.js';
-import {
-    displayBooks,
-    displayEbooks,
-    displayMessage
-} from './ui.js';
-import { addBook } from './storage.js';
+
 
 let currentSearchBooks = [];
 
